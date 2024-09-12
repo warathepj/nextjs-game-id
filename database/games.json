@@ -1,0 +1,14 @@
+{
+    "games": [
+        {
+            "path": "080.jpg",
+            "code": "am",
+            "name": "animal"
+        },
+        {
+            "path": "079.jpg",
+            "code": "fr",
+            "name": "fruit"
+        }
+    ]
+}
