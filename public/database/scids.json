@@ -1,0 +1,15 @@
+{
+    "ids": [
+        {
+            "path": "https://warathepj.github.io/html-game-id/cat2.jpg",
+            "id": "sc1",
+            "name": "SHADOW OF THE CAT",
+            "description": "Wuthering Waves ไอดีเพชร + เพชร 17000+ ตั๋วทอง 10+ ตั๋วฟ้า 70"
+        },
+        {
+            "path": "079.jpg",
+            "id": "sc2",
+            "name": "fruit"
+        }
+    ]
+}

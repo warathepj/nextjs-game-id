@@ -1,9 +1,9 @@
 {
     "games": [
         {
-            "path": "080.jpg",
-            "code": "am",
-            "name": "animal"
+            "path": "https://warathepj.github.io/html-game-id/cat1.jpg",
+            "code": "sc",
+            "name": "SHADOW OF THE CAT"
         },
         {
             "path": "079.jpg",
