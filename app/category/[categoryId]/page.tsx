@@ -38,6 +38,7 @@ const CategoryId = ({ params }) => {
             <div key={id.id}>
               {/* <Link href={`/category/${id.code}`}> */}
                 <IdCard
+                  id={id.id}
                   path={id.path}
                   name={id.name} 
                   description={id.description} 
