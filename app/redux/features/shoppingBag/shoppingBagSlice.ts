@@ -1,46 +1,54 @@
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:4254345429.
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:1729932395.
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:3662556801.
-// app/redux/shoppingCartSlice.ts
-    import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-    
-    interface Product {
-      id: string;
-      name: string;
-      path: string;
-      description: string;
-      price: number; // Add price if needed
-    }
-    
-    interface ShoppingCartState {
-      items: Product[];
-    }
-    
-    const initialState: ShoppingCartState = {
-      items: [],
-    };
-    // ///////////sample from local/////////////
+// app/redux/features/shoppingBag/shoppingBagSlice.ts/
+//from app/redux/features/shoppingBag/shoppingBagSlice.ts/
+// make function for reset count to 0
 
-    // app/redux/profileSlice.js
-// import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+interface Product {
+  id: string;
+  name: string;
+  path: string;
+  description: string;
+  price: number;
+}
 
+interface ShoppingBagState {
+  
+  //from app/redux/features/shoppingBag/shoppingBagSlice.ts/
+  // count is length of items, how to code count?
+  items: Product[];
+  totalPrice: number;
+  count: number;
+}
 
-    ////////////sample from local/////////
-    
-    const shoppingCartSlice = createSlice({
-      name: 'shoppingCart',
-      initialState,
-      reducers: {
-        addProduct: (state, action: PayloadAction<Product>) => {
-          state.items.push(action.payload);
-        },
-        removeProduct: (state, action: PayloadAction<number>) => {
-          state.items = state.items.filter((item) => item.id !== action.payload);
-        },
-        // Add other actions like clearCart, updateQuantity, etc. if needed
-      },
-    });
-    
-    export const { addProduct, removeProduct } = shoppingCartSlice.actions;
-    export default shoppingCartSlice.reducer;
+const initialState: ShoppingBagState = {
+  items: [],
+  totalPrice: 0,
+  count: 0,
+};
+
+const shoppingBagSlice = createSlice({
+  name: 'shoppingBag',
+  initialState,
+  reducers: {
+    addToBag: (state, action: PayloadAction<Product>) => {
+      /////////NEW CODE
+
+      const existingItem = state.items.find((item) => item.id === action.payload.id);
+      if (!existingItem) {
+        state.items.push(action.payload);
+        state.totalPrice += action.payload.price;
+      }
+      state.count = state.items.length; // Update count 
+      /////////NEW CODE
+      // state.items.push(action.payload); Old working code
+    },
+
+    resetCount: (state) => {
+      state.count = 0;
+    },
+  },
+});
+
+export const { addToBag, resetCount } = shoppingBagSlice.actions;
+export default shoppingBagSlice.reducer;

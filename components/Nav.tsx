@@ -1,20 +1,19 @@
-import Link from 'next/link';
-
+"use client"
 import MainMenu from './main-menu'
-import { ShoppingBag } from 'lucide-react'
 import Logo from './(icon)/Logo'
+import NotificationBadge from './notification-badge';
+import { useAppSelector } from '../app/redux/hooks';
 
-const Nav = () => {
+
+const Nav: React.FC = () => {
+  const count = useAppSelector((state) => state.shoppingBag.count);
+
   return (
     <div className='flex flex-row justify-between items-center'>
         <MainMenu/>
         <Logo/>
-        <Link 
-                className="hover:cursor-pointer"
-
-        href="/shopping-bag">
-        <ShoppingBag/>
-        </Link>
+        
+        <NotificationBadge count={count}/>
     </div>
   )
 }

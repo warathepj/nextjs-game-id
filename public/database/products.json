@@ -1,0 +1,14 @@
+{
+    "products": [
+        {
+            "path": "https://warathepj.github.io/html-game-id/cat1.jpg",
+            "code": "sc1",
+            "name": "SHADOW OF THE CAT"
+        },
+        {
+            "path": "079.jpg",
+            "code": "fr",
+            "name": "fruit"
+        }
+    ]
+}

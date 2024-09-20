@@ -21,6 +21,13 @@ const MainMenu = () => {
         <DrawerContent>some drawer content is here
 
           {/* //when click components/main-menu.tsx */}
+          <Link href="/render-shopping-bag">
+            {/* <DrawerTrigger> */}
+            <DrawerClose>
+              render-shopping-bag
+      </DrawerClose>
+            {/* </DrawerTrigger> */}
+          </Link>
           <Link href="/">
             {/* <DrawerTrigger> */}
             <DrawerClose>

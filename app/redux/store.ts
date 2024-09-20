@@ -2,11 +2,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 // import counterReducer from './features/counter/counterSlice';
 import shoppingBagReducer from './features/shoppingBag/shoppingBagSlice';
-
+import emailReducer from './features/email/emailSlice';
 export const store = configureStore({
   reducer: {
-    // counter: counterReducer,
     shoppingBag: shoppingBagReducer,
+    email: emailReducer,
   },
 });
 

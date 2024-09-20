@@ -7,7 +7,8 @@ const Home = () => {
     <div className="relative">
       <img 
         className="w-full"
-        src="https://warathepj.github.io/html-game-id/cat1.jpg" alt="" />
+        src="https://warathepj.github.io/html-game-id/cat1.jpg" alt="" 
+      />
       <Link 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         href="/product">

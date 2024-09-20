@@ -3,13 +3,26 @@
         {
             "path": "https://warathepj.github.io/html-game-id/cat2.jpg",
             "id": "sc1",
+            "tag": "sc",
             "name": "SHADOW OF THE CAT",
-            "description": "Wuthering Waves ไอดีเพชร + เพชร 17000+ ตั๋วทอง 10+ ตั๋วฟ้า 70"
+            "description": "Sadow of The Cat ไอดีเพชร + เพชร 17000+ ตั๋วทอง 10+ ตั๋วฟ้า 70",
+            "price": 199
         },
         {
-            "path": "079.jpg",
+            "path": "https://warathepj.github.io/html-game-id/cat3.jpg",
             "id": "sc2",
-            "name": "fruit"
+            "tag": "sc",
+            "name": "SHADOW OF THE CAT",
+            "description": "Sadow of The Cat ไอดีเพชร + เพชร 10000+ ตั๋วทอง 10+ ตั๋วฟ้า 60",
+            "price": 179
+        },
+        {
+            "path": "https://warathepj.github.io/html-game-id/corgi2.jpg",
+            "id": "ls1",
+            "tag": "ls",
+            "name": "LAST STAND CORGI",
+            "description": "Last Stand Corgi ไอดีเพชร + เพชร 10000+ ตั๋วทอง 10+ ตั๋วฟ้า 60",
+            "price": 169
         }
     ]
 }
