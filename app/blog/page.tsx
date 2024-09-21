@@ -1,8 +1,11 @@
-import React from 'react'
+import NestedCards from '@/components/nested-cards'
 
 const Blog = () => {
+
   return (
-    <div>Blog</div>
+    <div>Blog
+      <NestedCards/>
+    </div>
   )
 }
 

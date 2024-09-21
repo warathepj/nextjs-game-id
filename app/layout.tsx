@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/scroll-to-top";
 import { Providers } from '../components/Providers';
 // import { store } from './redux/store';
 // import { Provider } from 'react-redux';
@@ -30,7 +31,9 @@ export default function RootLayout({
 
              <Providers>
              <Nav />
-              {children}</Providers>
+              {children}
+              <ScrollToTop/>
+              </Providers>
              <Footer />
            {/* </Provider> */}
         </body>

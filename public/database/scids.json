@@ -17,12 +17,36 @@
             "price": 179
         },
         {
+            "path": "https://warathepj.github.io/html-game-id/cat4.jpg",
+            "id": "sc3",
+            "tag": "sc",
+            "name": "SHADOW OF THE CAT",
+            "description": "Sadow of The Cat ไอดีเพชร + เพชร 9000+ ตั๋วทอง 9+ ตั๋วฟ้า 60",
+            "price": 169
+        },
+        {
             "path": "https://warathepj.github.io/html-game-id/corgi2.jpg",
             "id": "ls1",
             "tag": "ls",
             "name": "LAST STAND CORGI",
-            "description": "Last Stand Corgi ไอดีเพชร + เพชร 10000+ ตั๋วทอง 10+ ตั๋วฟ้า 60",
+            "description": "Last Stand Corgi ไอดีเพชรเริ่มต้น เพชร 5000+",
             "price": 169
+        },
+        {
+            "path": "https://warathepj.github.io/html-game-id/corgi3.jpg",
+            "id": "ls2",
+            "tag": "ls",
+            "name": "LAST STAND CORGI",
+            "description": "Last Stand Corgi ไอดีเพชรเริ่มต้น เพชร 4000+",
+            "price": 159
+        },
+        {
+            "path": "https://warathepj.github.io/html-game-id/corgi4.jpg",
+            "id": "ls3",
+            "tag": "ls",
+            "name": "LAST STAND CORGI",
+            "description": "Last Stand Corgi ไอดีเพชรเริ่มต้น เพชร 3000+",
+            "price": 149
         }
     ]
 }

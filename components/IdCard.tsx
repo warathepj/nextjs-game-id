@@ -62,7 +62,7 @@ const IdCard: React.FC<IdCardProps> = ({ id, name, path, description, price }) =
     <Card className="w-[350px] hover:w-[370px] mb-4">
       <CardHeader>
         <CardTitle>{name}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription>des {description}</CardDescription>
       </CardHeader>
       <CardContent>
         <pre>{id}</pre>
